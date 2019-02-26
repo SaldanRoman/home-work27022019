@@ -166,7 +166,7 @@ nav ul a{
     width: 100%;
 }
 
-.button-container {
+.product-card .button-container {
     display: flex;
     justify-content: space-around;
 }
