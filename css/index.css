@@ -2,8 +2,6 @@
 
 :root {
     font-family: 'Play', sans-serif;
-    --main-font-color: black;
-    --secondary-font-color: white;
 }
 
 h2{
@@ -73,7 +71,7 @@ header .basket{
 
 header .header-name{
 	text-align: center;
-	color: var(--main-font-color);
+	color: black;
 	order: 3;
 	flex-basis: 100%;
 }
@@ -94,7 +92,7 @@ nav li {
 
 nav ul a{
 	text-decoration: none;
-	color: var(--main-font-color);
+	color: black;
 	
 }
 
@@ -129,7 +127,7 @@ nav ul a{
 		order: 2;
 		flex-basis: 75%;
 		background-color: #2e2e2e;
-		color: var(--secondary-font-color);
+		color: white;
 		text-align: left;
 	}	
 	header .basket{
@@ -153,9 +151,6 @@ nav ul a{
 			
 }
 
-
-
-
 .product-card {
     
     padding: 10px;
@@ -172,8 +167,8 @@ nav ul a{
 }
 
 .product-list {
-        display: grid;
-        grid-gap: 15px;
+    display: grid;
+    grid-gap: 15px;
 }
 
 @media (min-width: 480px) {
@@ -181,11 +176,6 @@ nav ul a{
         grid-template-columns: 1fr 1fr;
     }
 }
-
-
-
-
-
 
 .button {
 
@@ -208,14 +198,59 @@ nav ul a{
     color: white;
 }
 
+footer{
+	margin-top: 40px;
+	padding: 10px;
+	background-color: #2e2e2e;
+	color: white;
+	display: grid;
+    grid-gap: 15px;
+		
+		
+}
+
+footer .contacts p{
+	text-align: center;
+	
+}
+
+footer .social-network img{
+	width: 48px;
+	display: block;
+	margin: 0 auto;
+}
 
 
 
+footer .map img{
+	display: block;
+    width: 100%;
+}
 
+footer .social-network{
+	display: grid;
+    grid-gap: 5px;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+}
 
+footer .social-network a{
+	grid-row-start: 2;
+	
+}
 
-
-
-
-
-
+@media (min-width: 480px) {
+	footer .contacts {
+		display:inline-block;
+		margin: 0 auto;
+		vertical-align: center;
+	}
+	
+	footer .contacts p{
+		text-align: left;
+	}
+	
+    footer {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
