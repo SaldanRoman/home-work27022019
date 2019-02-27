@@ -97,6 +97,12 @@ nav ul a{
 	
 }
 
+nav ul a:hover{
+	text-decoration: underline;
+	transition-duration: 0.4s;
+
+}
+
 
 .slider{
     background-image: url(../img/slider.jpg);
