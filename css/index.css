@@ -219,13 +219,20 @@ footer .social-network img{
 	width: 48px;
 	display: block;
 	margin: 0 auto;
+	border-radius: 50%;
 }
+
+.social-network a img:hover{
+	box-shadow: 0 0 5px 5px #ffffff;
+	transition-duration: 0.3s;
+
+} 
 
 
 
 footer .map img{
 	display: block;
-    width: 100%;
+   	width: 100%;
 }
 
 footer .social-network{
